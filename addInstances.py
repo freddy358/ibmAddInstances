@@ -9,12 +9,12 @@ logging.debug(" --- Script started --- ")
 
 
 def email_send():
-    smtpaddress = "172.21.12.56"
+    smtpaddress = "{postfix.address}"
     smtpport = 25
-    from_adr = "message.flow@kapitalbank.az"
+    from_adr = "message.flow@domain.com"
     user_pass = ""
-    send_adr = ["farid.baxishli@kapitalbank.az"]
-    subject = "CRM. Additional instance was not set."
+    send_adr = ["my.mail@domain.com"]
+    subject = "NodeName. Additional instance was not set."
     content = """ Additional instance configured """
     timeout_value = 30 # seconds
     try:
